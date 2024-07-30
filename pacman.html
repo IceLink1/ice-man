@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            padding-top: 100px;
+            width: 100vw;
+            height: 90vh;
+            padding-left: 200px;
+        }
+        .main{
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btnForPhone{
+            height: 30%;
+            width: 100%;
+            text-align: center;
+            margin-top: 100px;
+            margin-left: -40px;
+        }
+        .w,.a,.s,.d{
+            height: 40px;
+            width: 40px;
+            border: none;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; background-color: black;">
+<div class="main"> 
+    <div>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div style="display:none;">
+            <img id="animation" src="animations.gif" width="140" height="20">
+            <img id="ghosts" src="ghost.png" width="140" height="20">
+        </div>
+    <div class="btnForPhone">
+        <button class="w">w</button>
+       <div style="margin-top: 5px;">
+        <button class="a">a</button>
+        <button class="s">s</button>
+        <button class="d">d</button>
+       </div>
+    </div>
+    </div>
+</div>
+    <script src="ghost.js"></script>
+    <script src="pacman.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
